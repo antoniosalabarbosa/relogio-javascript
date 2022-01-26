@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio | by: Antonio Sala</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/cron.css">
+</head>
+<body>
+    <div id="container">
+        <div id="sections">
+
+            <section class="sec">
+                <div class="cont-sec">
+                    <div class="title-sec">
+                       <a href="#">
+                            <img src="../src/icons/down-arrow.png" alt="Voltar" class="return_menu">
+                       </a>
+                        <h1>Cronômetro</h1>
+                    </div>
+
+                    <div class="crono-cont">
+                        <div class="contador">
+                            <span data-crono="hora"></span><!--hora-->
+                            <span data-crono="minuto"></span><!--minuto-->
+                            <span data-crono="segundo"></span><!--segundo-->
+                        </div>
+                    </div>
+
+                    <div class="btn-cron">
+                        <button data-cron="" data-btn="iniciar">
+                            <img src="../src/icons/botao-play.png" alt="Iniciar">
+                        </button>
+
+                        <button data-cron="inativo" data-btn="pausar">
+                            <img src="../src/icons/pausa.png" alt="Pausar">
+                        </button>
+                        
+                        <button data-cron="inativo" data-btn="Parar">
+                            <img src="../src/icons/stop.png" alt="Parar">
+                        </button>
+
+                        <button data-cron="inativo" data-btn="Marcar">
+                            <img src="../src/icons/icone-de-bandeira.png" alt="Marcar">
+                        </button>
+                    </div>
+
+                    <div data-marca="inativo" class="marca">
+                        <div class="tabela"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="../js/cron.js"></script>
+</body>
+</html>
